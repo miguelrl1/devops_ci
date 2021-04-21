@@ -81,6 +81,7 @@ public class BasicApplicationTests {
                 .contentType(MediaType.APPLICATION_JSON)
                 .content(asJsonString(mockdto))
         ).andDo(print()).andExpect(status().isOk());
+
     }
 
     /**
